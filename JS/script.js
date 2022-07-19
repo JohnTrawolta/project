@@ -49,12 +49,6 @@
 //     }
 // }
 
-// function showMyDB() {
-//     if (personalMovieDb.privat == false) {
-//         console.log(personalMovieDb);
-//     }
-// }
-
 // function writeYourGenres() {
 //     let genre;
 //     for (let i = 0; i <= 2; i++) {
@@ -63,6 +57,12 @@
 //         }
 //         while (genre == "" || genre == null);
 //         personalMovieDb.genres[i] = genre;
+//     }
+// }
+
+// function showMyDB() {
+//     if (personalMovieDb.privat == false) {
+//         console.log(personalMovieDb);
 //     }
 // }
 
@@ -218,23 +218,24 @@
 //         result += '*';
 //     }
 //     result += '\n';
-//     // result = '';
 // }
 // console.log(result);
 
+////////////////////////Exercise 6
 
+// function getMathResult(numberOne, numberTwo) {
+//     if (typeof(numberTwo) != 'number' || numberTwo <= 0) {return numberOne;}
 
-const lines = 5;
-let result = '';
+//     let result = '';
+//     for (let i = 1; i <= numberTwo; i++){
+//         result = result + `${numberOne * i}`;
+//         if (i != numberTwo) {result = result + '---';}
+//     }
+//     return result;
+// }
 
-for (let i = 0; i <= lines; i++) {
-    for (let j = 0; j < lines - i; j++) {
-        result += " ";
-    }
-    for (let j = 0; j < 2 * i + 1; j++) {
-        result += "*";
-    }
-    result += "\n";
-}
+// console.log(getMathResult(6, 8));
 
-console.log(result);
+const a = "Hello World";
+
+console.log(a.slice(5));
